@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padilla Traveller's Inn</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <img src="assets\Logo.jpg" alt="Padilla Traveller's Inn Building Photo">
+      <h2>Padilla Traveller’s Inn</h2>
+    </a>
+
+    <!-- Mobile menu button -->
+    <input type="checkbox" id="nav-toggle" aria-label="Toggle menu">
+    <label class="burger" for="nav-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+
+    <ul class="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#rooms">Rooms &amp; Amenities</a></li>
+      <li><a href="#rates">Rates</a></li>
+      <li><a class="active" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <img src="assets\buildingPhto.jpg" alt="Padilla Traveller's Inn Building.">
+  <div class="container hero-content">
+    <div class="hero-panel">
+      <div class="badges">
+        <span class="badge">4 cozy rooms</span>
+        <span class="badge">Free Wi-Fi</span>
+        <span class="badge">Lutong Bahay</span>
+      </div>
+      <h1>Your comfortable place to stay</h1>
+      <p>A warm, welcoming transient house in Impasugong, Bukidnon, made for travellers, hikers, and tourists.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#contact">Reserve your room</a>
+        <a class="btn btn-outline" href="#rooms">See the rooms</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container about-split">
+
+    <div class="about-left">
+      <div class="about-top">
+        <span class="pill-tag">About Us</span>
+        <h2>A Simple Stop,<br>A Restful Stay</h2>
+        <p>Padilla Traveller’s Inn is a transient house in Impasugong, Bukidnon with 4 cozy rooms for travellers, hikers, and tourists. Rest easy with free Wi-Fi, Lutong Bahay meals, and secure parking.</p>
+      </div>
+
+      <div class="about-thumbs">
+        <div class="thumb t1">
+             <img src="" alt="Building">
+        </div>
+        <div class="thumb t2">
+             <img src="" alt="Dining">
+        </div>
+        <div class="thumb t3">
+             <img src="" alt="Parking Area">
+        </div>
+      </div>
+    </div>
+
+    <div class="about-feature">
+      <div class="feature-photo">
+        <img src="" alt="Main Building">
+      </div>
+      <div class="feature-card">
+        <h3>Rest easy, we’ve got you covered</h3>
+        <p>Clean rooms, a warm meal, and a friendly welcome after a long road or a long hike.</p>
+        <a class="pill-btn" href="#rooms">
+          <i class="fa-solid fa-arrow-right-long"></i> Learn more
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="rooms" class="band">
+  <div class="container">
+    <div class="section-head">
+      <span class="pill-tag">Our Rooms</span>
+      <h2>Our 4 guest rooms</h2>
+      <p>Each room is set up for a comfortable overnight stay. Message us to ask which rooms are open for your dates.</p>
+    </div>
+    
+    <div class="room-grid">
+      <article class="card room-card">
+         <img src="a" alt="Room 1">
+        <div class="room-body">
+            <h3>Room 1</h3>
+            <div class="price">₱800 <small>/ night</small></div>
+            <ul>
+                <li>Double bed</li>
+                <li>Free Wi-Fi</li>
+                <li>Private comfort room</li>
+            </ul>
+            <label class="btn" for="room1-toggle">View Photos &amp; Details</label>
+        </div>
+    </article>
+
+      <article class="card room-card">
+        <img src="" alt="Room 2">
+        <div class="room-body">
+            <h3>Room 2</h3>
+            <div class="price">₱800 <small>/ night</small></div>
+            <ul>
+                <li>Double bed</li>
+                <li>Free Wi-Fi</li>
+                <li>Private comfort room</li>
+            </ul>
+            <label class="btn" for="room2-toggle">View Photos &amp; Details</label>
+        </div>
+    </article>
+
+      <article class="card room-card">
+        <img src="" alt="Room 3">
+        <div class="room-body">
+            <h3>Room 3</h3>
+            <div class="price">₱1,200 <small>/ night</small></div>
+            <ul>
+                <li>Bunk beds for groups</li>
+                <li>Free Wi-Fi</li>
+                <li>Private comfort room</li>
+            </ul>
+            <label class="btn" for="room3-toggle">View Photos &amp; Details</label>
+        </div>
+    </article>
+
+      <article class="card room-card">
+        <img src="" alt="Room 4">
+        <div class="room-body">
+            <h3>Room 4</h3>
+            <div class="price">₱1,200 <small>/ night</small></div>
+            <ul>
+                <li>Bunk beds for groups</li>
+                <li>Free Wi-Fi</li>
+                <li>Private comfort room</li>
+            </ul>
+            <label class="btn" for="room4-toggle">View Photos &amp; Details</label>
+        </div>
+    </article>
+    </div>
+
+    <!-- POPUP FOR ROOM 1 -->
+    <input type="checkbox" id="room1-toggle" class="modal-toggle" aria-label="Open Room 1 details">
+    <div class="modal" role="dialog" aria-label="Room 1 photos and details">
+      <label class="modal-backdrop" for="room1-toggle" aria-label="Close popup"></label>
+      <div class="card modal-box">
+        <label class="modal-x" for="room1-toggle" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="modal-grid">
+          <div class="gallery">
+            <input type="radio" name="room1-photo" id="room1-p1" checked>
+            <input type="radio" name="room1-photo" id="room1-p2">
+            <input type="radio" name="room1-photo" id="room1-p3">
+            <div class="shots">
+              <img class="shot" src="" alt="Room 1 Bedroom">
+              <img class="shot alt1" src="" alt="Room 1 Comfort Room">
+              <img class="shot alt2" src="" alt="Room 1 Entrance">
+            </div>
+            <div class="thumbs">
+              <label for="room1-p1">Bedroom</label>
+              <label for="room1-p2">Comfort room</label>
+              <label for="room1-p3">Entrance</label>
+            </div>
+          </div>
+
+          <div class="modal-details">
+            <span class="pill-tag">Room 1</span>
+            <h3>Room 1: Double bed</h3>
+            <div class="price">₱800 <small>/ night · Sleeps 2 guests</small></div>
+
+            <h4>Amenities</h4>
+            <ul class="check-list">
+              <li>Double bed</li>
+              <li>Free Wi-Fi</li>
+              <li>Private comfort room</li>
+              <li>Lutong Bahay meals on request</li>
+              <li>Spacious, secure parking</li>
+            </ul>
+
+            <h4>Room rules</h4>
+            <ul class="rule-list">
+              <li>Check-in 2:00 PM, check-out 12:00 NN</li>
+              <li>No smoking inside the rooms</li>
+              <li>Quiet hours from 10:00 PM to 6:00 AM</li>
+              <li>Please tell us about extra guests</li>
+            </ul>
+
+            <div class="tab-buttons">
+              <a class="btn" href="mailto:daniellecamelapadilla@gmail.com">Reserve Room 1</a>
+              <label class="btn btn-outline" for="room1-toggle">Close</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP FOR ROOM 2 -->
+    <input type="checkbox" id="room2-toggle" class="modal-toggle" aria-label="Open Room 2 details">
+    <div class="modal" role="dialog" aria-label="Room 2 photos and details">
+      <label class="modal-backdrop" for="room2-toggle" aria-label="Close popup"></label>
+      <div class="card modal-box">
+        <label class="modal-x" for="room2-toggle" aria-label="Close">
+         <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="modal-grid">
+          <div class="gallery">
+            <input type="radio" name="room2-photo" id="room2-p1" checked>
+            <input type="radio" name="room2-photo" id="room2-p2">
+            <input type="radio" name="room2-photo" id="room2-p3">
+            <div class="shots">
+              <img class="shot" src="" alt="Room 2 Bedroom">
+              <img class="shot" src="" alt="Room 2 Comfort room">
+              <img class="shot" src="" alt="Room 2 Entrance">
+            </div>
+            <div class="thumbs">
+              <label for="room2-p1">Bedroom</label>
+              <label for="room2-p2">Comfort room</label>
+              <label for="room2-p3">Entrance</label>
+            </div>
+          </div>
+
+          <div class="modal-details">
+            <span class="pill-tag">Room 2</span>
+            <h3>Room 2: Double bed</h3>
+            <div class="price">₱800 <small>/ night · Sleeps 2 guests</small></div>
+
+            <h4>Amenities</h4>
+            <ul class="check-list">
+              <li>Double bed</li>
+              <li>Free Wi-Fi</li>
+              <li>Private comfort room</li>
+              <li>Lutong Bahay meals on request</li>
+              <li>Spacious, secure parking</li>
+            </ul>
+
+            <h4>Room rules</h4>
+            <ul class="rule-list">
+              <li>Check-in 2:00 PM, check-out 12:00 NN</li>
+              <li>No smoking inside the rooms</li>
+              <li>Quiet hours from 10:00 PM to 6:00 AM</li>
+              <li>Please tell us about extra guests</li>
+            </ul>
+
+            <div class="tab-buttons">
+              <a class="btn" href="mailto:daniellecamelapadilla@gmail.com">Reserve Room 2</a>
+              <label class="btn btn-outline" for="room2-toggle">Close</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP FOR ROOM 3 -->
+    <input type="checkbox" id="room3-toggle" class="modal-toggle" aria-label="Open Room 3 details">
+    <div class="modal" role="dialog" aria-label="Room 3 photos and details">
+      <label class="modal-backdrop" for="room3-toggle" aria-label="Close popup"></label>
+      <div class="card modal-box">
+        <label class="modal-x" for="room3-toggle" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="modal-grid">
+          <div class="gallery">
+            <input type="radio" name="room3-photo" id="room3-p1" checked>
+            <input type="radio" name="room3-photo" id="room3-p2">
+            <input type="radio" name="room3-photo" id="room3-p3">
+            <div class="shots">
+              <img class="shot" src="" alt="Room 3 Bedroom">
+              <img class="shot" src="" alt="Room 3 Comfort room">
+              <img class="shot" src="" alt="Room 3 Entrance">
+            </div>
+            <div class="thumbs">
+              <label for="room3-p1">Bedroom</label>
+              <label for="room3-p2">Comfort room</label>
+              <label for="room3-p3">Entrance</label>
+            </div>
+          </div>
+
+          <div class="modal-details">
+            <span class="pill-tag">Room 3</span>
+            <h3>Room 3: Bunk beds for groups</h3>
+            <div class="price">₱1,200 <small>/ night · Good for groups</small></div>
+
+            <h4>Amenities</h4>
+            <ul class="check-list">
+              <li>Bunk beds for groups</li>
+              <li>Free Wi-Fi</li>
+              <li>Private comfort room</li>
+              <li>Lutong Bahay meals on request</li>
+              <li>Spacious, secure parking</li>
+            </ul>
+
+            <h4>Room rules</h4>
+            <ul class="rule-list">
+              <li>Check-in 2:00 PM, check-out 12:00 NN</li>
+              <li>No smoking inside the rooms</li>
+              <li>Quiet hours from 10:00 PM to 6:00 AM</li>
+              <li>Please tell us about extra guests</li>
+            </ul>
+
+            <div class="tab-buttons">
+              <a class="btn" href="mailto:daniellecamelapadilla@gmail.com">Reserve Room 3</a>
+              <label class="btn btn-outline" for="room3-toggle">Close</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POPUP FOR ROOM 4  -->
+    <input type="checkbox" id="room4-toggle" class="modal-toggle" aria-label="Open Room 4 details">
+    <div class="modal" role="dialog" aria-label="Room 4 photos and details">
+      <label class="modal-backdrop" for="room4-toggle" aria-label="Close popup"></label>
+      <div class="card modal-box">
+        <label class="modal-x" for="room4-toggle" aria-label="Close">
+          <i class="fa-solid fa-xmark"></i>
+        </label>
+
+        <div class="modal-grid">
+          <div class="gallery">
+            <input type="radio" name="room4-photo" id="room4-p1" checked>
+            <input type="radio" name="room4-photo" id="room4-p2">
+            <input type="radio" name="room4-photo" id="room4-p3">
+            <div class="shots">
+              <img class="shot" src="" alt="Room 4 Bedroom">
+              <img class="shot" src="" alt="Room 4 Comfort room">
+              <img class="shot" src="" alt="Room 4 Entrance">
+            </div>
+            <div class="thumbs">
+              <label for="room4-p1">Bedroom</label>
+              <label for="room4-p2">Comfort room</label>
+              <label for="room4-p3">Entrance</label>
+            </div>
+          </div>
+
+          <div class="modal-details">
+            <span class="pill-tag">Room 4</span>
+            <h3>Room 4: Bunk beds for groups</h3>
+            <div class="price">₱1,200 <small>/ night · Good for groups</small></div>
+
+            <h4>Amenities</h4>
+            <ul class="check-list">
+              <li>Bunk beds for groups</li>
+              <li>Free Wi-Fi</li>
+              <li>Private comfort room</li>
+              <li>Lutong Bahay meals on request</li>
+              <li>Spacious, secure parking</li>
+            </ul>
+
+            <h4>Room rules</h4>
+            <ul class="rule-list">
+              <li>Check-in 2:00 PM, check-out 12:00 NN</li>
+              <li>No smoking inside the rooms</li>
+              <li>Quiet hours from 10:00 PM to 6:00 AM</li>
+              <li>Please tell us about extra guests</li>
+            </ul>
+
+            <div class="tab-buttons">
+              <a class="btn" href="mailto:daniellcamelapadilla">Reserve Room 4</a>
+              <label class="btn btn-outline" for="room4-toggle">Close</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="amenities">
+  <div class="container">
+    <div class="section-head center">
+      <span class="pill-tag">Our Amenities</span>
+      <h2>Everything you need for the stay</h2>
+      <p>Simple comforts that make a short stay easy.</p>
+    </div>
+    <div class="amenity-grid">
+      <div class="card amenity">
+        <div class="icon">
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+        <h3>Free Wi-Fi</h3>
+        <p>Free Wi-Fi for all staying guests.</p>
+      </div>
+      <div class="card amenity">
+        <div class="icon">
+          <i class="fa-solid fa-bowl-rice"></i>
+        </div>
+        <h3>Lutong Bahay meals</h3>
+        <p>Delicious home-cooked meals, available upon request.</p>
+      </div>
+      <div class="card amenity">
+        <div class="icon">
+          <i class="fa-solid fa-square-parking"></i>
+        </div>
+        <h3>Spacious, secure parking</h3>
+        <p>A large parking area with secure space for guest vehicles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="rates" class="band">
+  <div class="container">
+    <div class="section-head">
+      <span class="pill-tag">Our Rates</span>
+      <h2>Rates &amp; booking</h2>
+      <p>Know the rates, the times, and how to reserve before you arrive.</p>
+    </div>
+    <div class="rates-grid">
+      <div class="card panel">
+        <h3>Overnight rates</h3>
+        <table class="rate-table">
+          <tr>
+            <td>Room 1 and Room 2</td>
+            <td>₱800</td>
+          </tr>
+          <tr>
+            <td>Room 3 and Room 4</td>
+            <td>₱1,200</td>
+          </tr>
+          <tr>
+            <td>Home-cooked meal</td>
+            <td>On request</td>
+          </tr>
+          <tr>
+            <td>Wi-Fi and parking</td>
+            <td>Free</td>
+          </tr>
+        </table>
+        <h3>Check-in and check-out</h3>
+        <div class="times">
+          <div class="time"><b>2:00 PM</b>Check-in</div>
+          <div class="time"><b>12:00 NN</b>Check-out</div>
+        </div>
+      </div>
+      <div class="card panel">
+        <h3>How to reserve</h3>
+        <ol class="steps">
+          <li>Call or text us at <b>09759178563</b>, or use the message tabs in the Contact section.</li>
+          <li>Tell us your dates, number of guests, and preferred room.</li>
+          <li>We’ll confirm if the room is available.</li>
+          <li>Arrive at check-in time and enjoy your stay.</li>
+        </ol>
+        <a class="btn" href="#contact">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <span class="pill-tag">Our FAQ</span>
+      <h2>Everything you need to know</h2>
+      <p>Quick answers before you book.</p>
+    </div>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>How do I reserve a room?</summary>
+        <p>Call or text 09759178563, or use the message tabs below to send a ready-made email or text. We’ll confirm availability for your dates.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What are the check-in and check-out times?</summary>
+        <p>Check-in is at 2:00 PM and check-out is at 12:00 NN. Ask us if you need to arrive earlier or leave later.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How many rooms do you have?</summary>
+        <p>We have exactly 4 cozy guest rooms for short-term and overnight stays.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are meals available?</summary>
+        <p>Yes. Delicious Lutong Bahay (home-cooked) meals are available upon request. Please tell us ahead of time.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is the Wi-Fi free?</summary>
+        <p>Yes, free Wi-Fi is available for all staying guests.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is there parking for my vehicle?</summary>
+        <p>Yes. We have a large, secure parking area for guest vehicles.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="band">
+  <div class="container">
+    <div class="section-head center">
+      <span class="pill-tag">Get in Touch</span>
+      <h2>Contact Us</h2>
+      <p>Questions about rooms, rates, or directions? Pick an option below. Your email or messaging app opens with the message ready to send.</p>
+    </div>
+
+    <div class="contact-top">
+
+      <!-- LEFT: CSS tabs. -->
+      <div class="card tabs">
+        <input type="radio" name="contact-tab" id="tab-reserve" checked>
+        <input type="radio" name="contact-tab" id="tab-question">
+        <input type="radio" name="contact-tab" id="tab-directions">
+
+        <div class="tab-labels">
+          <label for="tab-reserve">Reserve a room</label>
+          <label for="tab-question">Ask a question</label>
+          <label for="tab-directions">Get directions</label>
+        </div>
+
+        <!-- TAB 1 -->
+        <div class="tab-panel" id="panel-reserve">
+          <h3>Reserve a room</h3>
+          <p>We’ll open a pre-written message. Just fill in your dates and send.</p>
+          <div class="preview">“Hi Padilla Traveller’s Inn, I would like to reserve a room. Check-in date, check-out date, guests, and preferred room: …”</div>
+          <div class="tab-buttons">
+            <a class="btn" href="mailto:daniellecamelapadilla@gmail.com">Send by email</a>
+            <a class="btn btn-outline" href="sms:09759178563">Send a text</a>
+          </div>
+        </div>
+
+        <!-- TAB 2 -->
+        <div class="tab-panel" id="panel-question">
+          <h3>Ask a question</h3>
+          <p>Wondering about rooms, meals, or parking? Send us a quick note.</p>
+          <div class="preview">“Hi Padilla Traveller’s Inn, I have a question about: …”</div>
+          <div class="tab-buttons">
+            <a class="btn" href="mailto:daniellecamelapadilla@gmail.com">Send by email</a>
+            <a class="btn btn-outline" href="tel:09759178563">Call instead</a>
+          </div>
+        </div>
+
+        <!-- TAB 3 -->
+        <div class="tab-panel" id="panel-directions">
+          <h3>Get directions</h3>
+          <p>We’re in Impasugong, Bukidnon. Open the map for turn-by-turn directions, or call us and we’ll guide you in.</p>
+          <div class="tab-buttons">
+            <a class="btn" href="#openMap">Open in Maps</a>
+            <a class="btn btn-outline" href="tel:09759178563">Call for directions</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: quick contact box -->
+      <aside class="quick">
+        <h3>Quick contact</h3>
+        <p>Prefer to talk? Tap a button to call or text us right now.</p>
+        <a class="btn btn-block" href="tel:09759178563">Call 09759178563</a>
+        <a class="btn btn-block btn-outline" href="sms:09759178563">Text us</a>
+      </aside>
+    </div>
+
+    <!-- Three clickable info cards -->
+    <div class="info-row">
+      <a class="card info-card" href="tel:09759178563">
+        <span class="icon">
+          <i class="fa-solid fa-phone"></i></span><span>
+            <h3>09759178563</h3>
+            <p>Tap to call</p>
+          </span>
+        </a>
+
+      <a class="card info-card" href="mailto:daniellecamelapadilla@gmail.com">
+        <span class="icon">
+          <i class="fa-regular fa-envelope"></i></span><span>
+            <h3>avelitapadilla@gmail.com</h3>
+            <p>Tap to email</p>
+          </span>
+        </a>
+
+      <a class="card info-card" href="https://www.google.com/maps/search/?api=1&amp;query=Padilla+Travellers+Inn+Impasugong+Bukidnon" target="_blank" rel="noopener">
+        <span class="icon">
+          <i class="fa-solid fa-location-dot"></i></span><span>
+            <h3>Impasugong, Bukidnon</h3>
+            <p>Tap for directions</p>
+          </span>
+        </a>
+    </div>
+  </div>
+
+  <div class="map" id="openMap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947.9614816232156!2d125.00371657426106!3d8.306626699879516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32ffbb003d8ab675%3A0xc16422499331d1fb!2sPadilla%20Traveller's%20Inn!5e0!3m2!1sen!2sph!4v1794931158550!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>Padilla Traveller’s Inn</h4>
+        <p>Your comfortable place to stay in Impasugong, Bukidnon, with 4 cozy rooms for travellers, hikers, and tourists.</p>
+      </div>
+      
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About Us</a>
+          </li>
+          <li>
+            <a href="#rooms">Rooms &amp; Amenities</a>
+          </li>
+          <li>
+            <a href="#rates">Rates</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li>
+            <a href="#contact">Contact Us</a>
+          </li>
+          <li>
+            <a href="#faq">FAQ</a>
+          </li>
+          <li>
+            <a href="#rates">Check-in times</a>
+          </li>
+          <li>
+            <a href="#contact">Directions</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Overnight stay</li>
+          <li>Free Wi-Fi</li>
+          <li>Lutong Bahay meals</li>
+          <li>Secure parking</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-contact">
+      <span> Impasugong, Bukidnon</span>
+      <a href="tel:09759178563"> 09759178563</a>
+      <a href="mailto:daniellecamelapadilla@gmail.com">avelitapadilla@gmail.com</a>
+      <div class="social">
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#" aria-label="Messenger">
+          <i class="fa-brands fa-facebook-messenger"></i>
+      </div>
+    </div>
+
+    <p class="copyright">&copy; 2026 Padilla Traveller’s Inn. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
